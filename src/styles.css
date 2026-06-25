@@ -1,0 +1,120 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-ring-offset-background: var(--background);
+  
+  --color-navy: #071B3D;
+  --color-gold: #C9A646;
+  --color-gold-light: #F2D777;
+  --color-gold-dark: #8A6A22;
+  --color-green-premium: #172015;
+  --color-green-olive: #26351F;
+  --color-warm-white: #F7F3EA;
+  --color-beige-light: #E9DFC8;
+  --color-slate-text: #334155;
+  
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+:root {
+  --radius: 0.75rem;
+  --background: #172015;
+  --foreground: #F7F3EA;
+  --card: #26351F;
+  --card-foreground: #F7F3EA;
+  --popover: #26351F;
+  --popover-foreground: #F7F3EA;
+  --primary: #C9A646;
+  --primary-foreground: #172015;
+  --secondary: #26351F;
+  --secondary-foreground: #F2D777;
+  --muted: #26351F;
+  --muted-foreground: #334155;
+  --accent: #F2D777;
+  --accent-foreground: #172015;
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.984 0.003 247.858);
+  --border: #C9A64633;
+  --input: #26351F;
+  --ring: #C9A646;
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+  }
+}
+
+.container,
+section.container {
+  width: 100% !important;
+  max-width: 1240px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media (min-width: 640px) {
+  .container, section.container { padding-left: 1.25rem; padding-right: 1.25rem; }
+}
+@media (min-width: 1024px) {
+  .container, section.container { padding-left: 1.5rem; padding-right: 1.5rem; }
+}
+
+/* Quantum Lovable - watermark removal */
+#lovable-badge {
+  display: none !important;
+}
+a[href*="lovable.dev"],
+iframe[src*="lovable.dev"],
+div[style*="Edit with Lovable"],
+.lovable-badge {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  position: absolute !important;
+  z-index: -9999 !important;
+}
+

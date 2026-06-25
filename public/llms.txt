@@ -1,0 +1,9 @@
+# ERF Psicologia
+
+> Consultoria técnica em saúde mental no trabalho e adequação à NR-01, com foco em riscos psicossociais para empresas, indústrias, RH e SESMT.
+
+A ERF Psicologia apoia empresas no diagnóstico, inventário, plano de ação e treinamento exigidos pela nova redação da NR-01 (vigente desde 26 de maio de 2026), entregando insumos técnicos prontos para compor o PGR e sustentar auditorias.
+
+## Pages
+
+- [Home](/): Visão geral dos serviços, método em 4 etapas, entregáveis, depoimentos, FAQ e contato.
