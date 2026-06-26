@@ -96,7 +96,7 @@ export default function App() {
         <div className="space-y-5 max-w-[620px]">
           <div className="inline-block px-3 py-1 bg-gold/10 text-gold text-xs font-bold uppercase border border-gold/20 rounded">Adequação à NR-01 para empresas</div>
           <h1 className="font-serif leading-[1.08] text-4xl md:text-5xl lg:text-[3.5rem]">Prepare sua empresa para a NR-01 com diagnóstico técnico de riscos psicossociais</h1>
-          <p className="text-base md:text-lg text-warm-white/80 leading-relaxed">A ERF Psicologia e Consultoria e Treinamento JM ajuda indústrias, RH, SESMT e diretorias a estruturarem diagnóstico, inventário, plano de ação e treinamento para saúde mental no trabalho com segurança técnica e linguagem executiva.</p>
+          <p className="text-base md:text-lg text-warm-white/80 leading-relaxed">A ERF Psicologia e Consultoria e Treinamento JM ajudam empresas em geral — privadas, públicas, rurais e urbanas — além de indústrias, RH, SESMT e diretorias a estruturarem diagnóstico, inventário, plano de ação e treinamento para saúde mental no trabalho com segurança técnica e linguagem executiva.</p>
           <button onClick={openContact} className="inline-flex items-center gap-2 bg-gold text-green-premium px-7 py-3.5 rounded-lg font-bold text-base hover:bg-gold-light shadow-lg">
             <Phone className="w-5 h-5" /> Agendar conversa de 30 minutos
           </button>
@@ -168,7 +168,7 @@ export default function App() {
       </Section>
 
       {/* Método */}
-      <Section id="metodo" title="Como a ERF conduz o projeto — modelo em 4 etapas">
+      <Section id="metodo" title="Como conduzimos o projeto — modelo em 4 etapas">
         <div className="grid md:grid-cols-4 gap-6">
           {[
             { s: "01", t: "Diagnóstico", d: "Mapeamento dos fatores críticos por área." },
@@ -213,7 +213,7 @@ export default function App() {
       <Section id="quem-somos" title="Quem somos">
         <div className="grid md:grid-cols-2 gap-10">
           {[
-            { name: "Eliete Rezende Farale", role: "Psicóloga Clínica e Organizacional | CRP 04/67052", bio: "Atua com desenvolvimento humano há 12 anos. Já trabalhou com gestão de pessoas em organizações como a Associação a Portadores de AIDS Esperança e Vida, Star Chicken e Aeroporto Internacional de Viracopos. Levou a psicologia para mais de 200 empresas e instituições em todo o território nacional, com palestras motivacionais, SIPATs e entrevistas em rádio e TV, criando uma cultura que promove saúde mental e posiciona a empresa em um lugar de prestígio, saúde e longevidade.", photo: elieteFoto },
+            { name: "Eliete Rezende Farale", role: "Psicóloga Clínica e Organizacional | CRP 04/67052", bio: "Atua com desenvolvimento humano há 12 anos. Já trabalhou com gestão de pessoas em organizações como a Associação a Portadores de AIDS Esperança e Vida, Star Chicken e Aeroporto Internacional de Viracopos. Levou a psicologia para mais de 200 empresas e instituições em todo o território nacional, com palestras motivacionais, SIPATs e entrevistas em rádio e TV, criando uma cultura que promove saúde mental e posiciona a empresa em um lugar de prestígio, saúde e longevidade. Experiência clínica de 13 anos no atendimento às pessoas que enfrentam diferentes tipos de dependências e comportamentos compulsivos, incluindo dependência química, alcoolismo, tabagismo, jogos de azar, uso excessivo de internet, redes sociais e outras formas de dependência comportamental.", photo: elieteFoto },
             { name: "Janaína Miranda Pereira", role: "Técnica de Segurança do Trabalho | Enfermeira | COREN MG 480.877", bio: "Enfermeira, especialista em Saúde e Segurança do Trabalho, técnica em Segurança do Trabalho pelo Senac e pós-graduada em Saúde Mental. Atua com saúde mental corporativa, apoiando empresas na identificação, documentação e gerenciamento dos riscos psicossociais relacionados ao trabalho, em conformidade com a NR-1. Há 15 anos é instrutora do Senar Minas Gerais, com treinamentos nas áreas de saúde, segurança do trabalho, sustentabilidade, inteligência emocional e saúde emocional, especialmente para o público rural, empresas e organizações ligadas ao agronegócio. Também é palestrante da Sicredi e do Sebrae, levando conteúdos sobre saúde mental, qualidade de vida, segurança do trabalho e desenvolvimento humano. Seu propósito é ajudar empresas a construírem ambientes mais seguros, saudáveis, produtivos e humanizados.", photo: janainaFoto },
           ].map((p) => (
             <div key={p.name} className="bg-green-olive rounded-xl border border-gold/20 overflow-hidden flex flex-col">
@@ -280,13 +280,55 @@ export default function App() {
         </div>
       </Section>
 
+      {/* Palestras Eliete - Campanhas e Datas de Conscientização */}
+      <Section id="palestras" title="Campanhas e Datas de Conscientização">
+        <div className="text-center max-w-3xl mx-auto mb-10 space-y-3">
+          <p className="text-warm-white/80 text-lg">Desenvolvimento de palestras e ações educativas alinhadas às principais campanhas nacionais de saúde e conscientização</p>
+          <p className="text-xs uppercase tracking-widest text-gold">Palestrante responsável: Eliete Rezende Farale — ERF Psicologia | Varginha, MG</p>
+        </div>
+        <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-6">
+          {[
+            { n: "Janeiro Branco", d: "Saúde Mental e Bem-Estar Emocional" },
+            { n: "Maio Laranja", d: "Prevenção e Combate ao Abuso Sexual de Crianças e Adolescentes" },
+            { n: "Setembro Amarelo", d: "Prevenção ao Autoextermínio e Promoção da Vida" },
+            { n: "Outubro Rosa", d: "Saúde Integral da Mulher" },
+            { n: "Novembro Azul", d: "Saúde Integral do Homem" },
+            { n: "Álcool e Outras Drogas", d: "Campanhas de prevenção ao uso de álcool e outras drogas" },
+            { n: "Saúde Mental nas Empresas", d: "Programas de promoção da saúde mental no ambiente corporativo" },
+            { n: "Qualidade de Vida", d: "Campanhas de conscientização e promoção da qualidade de vida ao longo do ano, conforme as necessidades da organização" },
+            { n: "Treinamento de Líderes", d: "Comunicação assertiva e não violenta" },
+          ].map((c) => (
+            <div key={c.n} className="p-6 bg-green-olive rounded-xl border border-gold/30 flex flex-col gap-3 hover:border-gold/60 transition-colors">
+              <h3 className="font-serif text-lg text-warm-white leading-snug min-h-[3.5rem]">{c.n}</h3>
+              <p className="text-sm text-warm-white/75 leading-relaxed">{c.d}</p>
+            </div>
+          ))}
+        </div>
+        <div className="text-center mt-12 space-y-3">
+          <a
+            href="https://wa.me/5535999641548?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20informa%C3%A7%C3%B5es%20sobre%20palestras%20e%20campanhas%20de%20conscientiza%C3%A7%C3%A3o."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-gold text-green-premium px-8 py-4 rounded-lg font-bold hover:bg-gold-light shadow-lg"
+          >
+            Solicitar informações
+          </a>
+          <p className="text-xs text-warm-white/60">Palestras disponíveis para empresas, escolas e comunidades</p>
+        </div>
+      </Section>
+
+
+
       {/* Para Quem */}
       <Section id="para-quem" title="Para quem é esta solução">
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {[
             { t: "Indústrias", d: "Indústrias que precisam adequar o PGR à nova NR-01 com segurança técnica." },
             { t: "Equipes de RH", d: "Equipes de RH que precisam de linguagem executiva para apresentar o tema à diretoria." },
             { t: "Profissionais de SESMT", d: "Profissionais de SESMT que precisam de insumos técnicos completos para o inventário de riscos." },
+            { t: "Empresas públicas", d: "Órgãos, instituições e empresas públicas que precisam estruturar ações de saúde mental, prevenção e conformidade ocupacional." },
+            { t: "Empresas privadas", d: "Comércios, prestadores de serviço, escritórios, clínicas e negócios privados que precisam adequar processos à NR-01." },
+            { t: "Empresas rurais e urbanas", d: "Fazendas, agronegócio, comércio urbano e demais operações rurais ou urbanas que precisam mapear riscos psicossociais." },
           ].map((p) => (
             <div key={p.t} className="p-8 bg-green-olive rounded-xl border border-gold/20">
               <h3 className="text-gold font-serif text-xl mb-3">{p.t}</h3>
@@ -300,7 +342,7 @@ export default function App() {
       <Section id="investimento" title="Investimento">
         <div className="max-w-3xl mx-auto p-10 bg-green-olive rounded-xl border border-gold/30 text-center space-y-6">
           <p className="text-sm uppercase tracking-widest text-gold">Projetos sob medida</p>
-          <p className="text-3xl md:text-4xl font-serif text-warm-white">Entre R$ 10.000 e R$ 40.000</p>
+          <p className="text-3xl md:text-4xl font-serif text-warm-white">A partir de R$ 250,00</p>
           <p className="text-warm-white/75 leading-relaxed">
             O investimento depende do porte da empresa, número de colaboradores, turnos e escopo contratado.
             Em até 24 horas após uma conversa de 30 minutos, sua empresa recebe proposta detalhada com cronograma, entregáveis e investimento.
